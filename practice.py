@@ -8,7 +8,6 @@ for line in data_source[1:]:
         splitted_string = line.split(",")
         country = splitted_string[1]
         profit = float(splitted_string[-1])
-        # print(country, profit)
 
         if country in profit_by_country:
             profit_by_country[country] = profit_by_country.get(country) + profit
